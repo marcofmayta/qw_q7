@@ -1,0 +1,8 @@
+stage,selection_data,test_scored,artifact
+Data contract,none,False,locked split + preprocessing
+Classical augmentation,validation,False,SMOTE / Borderline-SMOTE / ADASYN
+CTGAN,validation,False,"epoch 300, budget 100%"
+QGAN,validation,False,"6 qubits, 2 layers, budget 50%"
+Fidelity,validation reference,False,KS / Wasserstein / RBF-MMD
+Downstream,validation,True,RF / XGBoost / LightGBM / Linear SVM
+Quantum handoff,shared validation,False,"n=200/1000; canonical q=6, d=12"

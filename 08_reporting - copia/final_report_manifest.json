@@ -1,0 +1,16 @@
+{
+  "protocol_version": "revalidation_v2_final_report_v1",
+  "created_at_utc": "2026-08-11T23:23:30.402637+00:00",
+  "reportable": true,
+  "profiles_found": [
+    "research"
+  ],
+  "dataset_sha256": "cc7a637a174ffe797e0af0375bce3c09561f0dc8b8115c0a6292718034f5012a",
+  "master_rows": 6,
+  "evidence_zip": "Marco_Revalidation_v2_evidence.zip",
+  "selected_downstream": {
+    "method": "ADASYN",
+    "classifier": "Random Forest",
+    "fixed_evaluation_macro_f1_mean": 0.8043987365435673
+  }
+}
