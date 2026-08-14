@@ -1,0 +1,3 @@
+column,non_null,mapped_to_four_classes,mapped_fraction,mapped_classes,raw_unique_count
+Category,58596,58596,1.0,"['Benign', 'Ransomware', 'Spyware', 'Trojan']",16
+Class,58596,29298,0.5,['Benign'],2

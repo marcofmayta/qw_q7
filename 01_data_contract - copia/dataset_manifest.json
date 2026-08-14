@@ -1,0 +1,137 @@
+{
+  "protocol_version": "revalidation_v2_data_contract_v1",
+  "created_at_utc": "2026-08-11T19:43:14.268661+00:00",
+  "source_file": "C:\\Users\\HP\\Desktop\\Qintern\\week5\\Marco_Revalidation_v2\\data\\MalMem2022.csv",
+  "source_filename": "MalMem2022.csv",
+  "source_sha256": "cc7a637a174ffe797e0af0375bce3c09561f0dc8b8115c0a6292718034f5012a",
+  "canonical_sha256_expected": "cc7a637a174ffe797e0af0375bce3c09561f0dc8b8115c0a6292718034f5012a",
+  "canonical_hash_enforced": true,
+  "input_state": "raw_deduplicated_in_notebook",
+  "raw_shape": [
+    58596,
+    58
+  ],
+  "full_raw_duplicate_count_with_metadata": 534,
+  "modeling_duplicate_count_ignoring_identifiers": 559,
+  "additional_feature_equivalent_distinct_files": 25,
+  "cross_partition_model_group_count": 12,
+  "clean_modeling_shape": [
+    58062,
+    56
+  ],
+  "clean_class_counts": {
+    "Benign": 29231,
+    "Ransomware": 9529,
+    "Spyware": 9815,
+    "Trojan": 9487
+  },
+  "target_source_column": "Category",
+  "target_column": "Label",
+  "class_order": [
+    "Benign",
+    "Ransomware",
+    "Spyware",
+    "Trojan"
+  ],
+  "feature_count_before_train_only_filter": 55,
+  "retained_feature_count": 52,
+  "retained_features": [
+    "pslist.nproc",
+    "pslist.nppid",
+    "pslist.avg_threads",
+    "pslist.avg_handlers",
+    "dlllist.ndlls",
+    "dlllist.avg_dlls_per_proc",
+    "handles.nhandles",
+    "handles.avg_handles_per_proc",
+    "handles.nfile",
+    "handles.nevent",
+    "handles.ndesktop",
+    "handles.nkey",
+    "handles.nthread",
+    "handles.ndirectory",
+    "handles.nsemaphore",
+    "handles.ntimer",
+    "handles.nsection",
+    "handles.nmutant",
+    "ldrmodules.not_in_load",
+    "ldrmodules.not_in_init",
+    "ldrmodules.not_in_mem",
+    "ldrmodules.not_in_load_avg",
+    "ldrmodules.not_in_init_avg",
+    "ldrmodules.not_in_mem_avg",
+    "malfind.ninjections",
+    "malfind.commitCharge",
+    "malfind.protection",
+    "malfind.uniqueInjections",
+    "psxview.not_in_pslist",
+    "psxview.not_in_eprocess_pool",
+    "psxview.not_in_ethread_pool",
+    "psxview.not_in_pspcid_list",
+    "psxview.not_in_csrss_handles",
+    "psxview.not_in_session",
+    "psxview.not_in_deskthrd",
+    "psxview.not_in_pslist_false_avg",
+    "psxview.not_in_eprocess_pool_false_avg",
+    "psxview.not_in_ethread_pool_false_avg",
+    "psxview.not_in_pspcid_list_false_avg",
+    "psxview.not_in_csrss_handles_false_avg",
+    "psxview.not_in_session_false_avg",
+    "psxview.not_in_deskthrd_false_avg",
+    "modules.nmodules",
+    "svcscan.nservices",
+    "svcscan.kernel_drivers",
+    "svcscan.fs_drivers",
+    "svcscan.process_services",
+    "svcscan.shared_process_services",
+    "svcscan.nactive",
+    "callbacks.ncallbacks",
+    "callbacks.nanonymous",
+    "callbacks.ngeneric"
+  ],
+  "training_constant_features": [
+    "pslist.nprocs64bit",
+    "handles.nport",
+    "svcscan.interactive_process_services"
+  ],
+  "nonfinite_cells_replaced_with_missing": 0,
+  "split": {
+    "seed": 42,
+    "train_fraction": 0.7,
+    "validation_fraction": 0.15,
+    "test_fraction": 0.15,
+    "sizes": {
+      "train": 40642,
+      "validation": 8710,
+      "test": 8710
+    },
+    "class_counts": {
+      "train": {
+        "Benign": 20461,
+        "Ransomware": 6670,
+        "Spyware": 6870,
+        "Trojan": 6641
+      },
+      "validation": {
+        "Benign": 4385,
+        "Ransomware": 1429,
+        "Spyware": 1473,
+        "Trojan": 1423
+      },
+      "test": {
+        "Benign": 4385,
+        "Ransomware": 1430,
+        "Spyware": 1472,
+        "Trojan": 1423
+      }
+    }
+  },
+  "software": {
+    "python": "3.12.0",
+    "pandas": "2.3.3",
+    "numpy": "2.5.2",
+    "scikit_learn": "1.7.2",
+    "joblib": "1.5.3"
+  },
+  "test_partition_disclosure": "Fixed held-out evaluation partition reused for protocol reconciliation; it was inspected in earlier project iterations."
+}

@@ -1,0 +1,4 @@
+partition,Benign,Ransomware,Spyware,Trojan,Total
+train,20461,6670,6870,6641,40642
+validation,4385,1429,1473,1423,8710
+test,4385,1430,1472,1423,8710
